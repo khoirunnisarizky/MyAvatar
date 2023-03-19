@@ -11,6 +11,7 @@
 		4EB5E21D29C75FF80021657B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB5E21C29C75FF80021657B /* ContentView.swift */; };
 		4EB5E21F29C75FF90021657B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB5E21E29C75FF90021657B /* Assets.xcassets */; };
 		4EB5E22229C75FF90021657B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB5E22129C75FF90021657B /* Preview Assets.xcassets */; };
+		4EB5E22A29C766460021657B /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB5E22929C766460021657B /* Avatar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		4EB5E21E29C75FF90021657B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EB5E22129C75FF90021657B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4EB5E22329C75FF90021657B /* MyAvatar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyAvatar.entitlements; sourceTree = "<group>"; };
+		4EB5E22929C766460021657B /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				4EB5E21A29C75FF80021657B /* MyAvatarApp.swift */,
 				4EB5E21C29C75FF80021657B /* ContentView.swift */,
+				4EB5E22929C766460021657B /* Avatar.swift */,
 				4EB5E21E29C75FF90021657B /* Assets.xcassets */,
 				4EB5E22329C75FF90021657B /* MyAvatar.entitlements */,
 				4EB5E22029C75FF90021657B /* Preview Content */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EB5E22A29C766460021657B /* Avatar.swift in Sources */,
 				4EB5E21D29C75FF80021657B /* ContentView.swift in Sources */,
 				4EB5E21B29C75FF80021657B /* MyAvatarApp.swift in Sources */,
 			);
