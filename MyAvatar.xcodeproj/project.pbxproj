@@ -15,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E46C1212A3B3B370054AAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4EB5E21729C75FF80021657B /* MyAvatar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAvatar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB5E21A29C75FF80021657B /* MyAvatarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAvatarApp.swift; sourceTree = "<group>"; };
 		4EB5E21C29C75FF80021657B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +55,7 @@
 		4EB5E21929C75FF80021657B /* MyAvatar */ = {
 			isa = PBXGroup;
 			children = (
+				4E46C1212A3B3B370054AAEC /* Info.plist */,
 				4EB5E21A29C75FF80021657B /* MyAvatarApp.swift */,
 				4EB5E21C29C75FF80021657B /* ContentView.swift */,
 				4EB5E22929C766460021657B /* Avatar.swift */,
@@ -282,6 +284,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyAvatar/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,6 +314,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyAvatar/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
