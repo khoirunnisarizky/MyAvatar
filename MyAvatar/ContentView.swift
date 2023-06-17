@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // TODO: Store our core data with property wrapper to sync the UI later
+    @FetchRequest(sortDescriptors: []) var avatars: FetchedResults<AvatarData>
+    
+    // TODO: Enable access to add and saving Core Data Objects
+    @Environment(\.managedObjectContext) var moc
+    
     @State var savedAvatars: [Avatar] = []
     @State var headView: Head = .head1
     @State var isHead1: Bool = true
@@ -18,6 +25,9 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+//            List(avatars) { avatar in
+//                Text(avatar.headValue ?? "Unknown")
+//            }
             Spacer()
             Image(headView.rawValue)
                 .resizable()
@@ -47,7 +57,12 @@ struct ContentView: View {
             
             Button("Save") {
                 print("Saved")
-                savedAvatars.append(Avatar(head: headView, body: bodyView, bottom: bottomView))
+                //savedAvatars.append(Avatar(head: headView, body: bodyView, bottom: bottomView))
+                let newAvatar = AvatarData(context: moc)
+                newAvatar.headValue = headView.rawValue
+                newAvatar.bodyValue = bodyView.rawValue
+                newAvatar.bottomValue = bottomView.rawValue
+                try? moc.save()
             }
             
             GeometryReader { reader in
@@ -55,17 +70,17 @@ struct ContentView: View {
                     RoundedRectangle(cornerRadius: 10).frame(width: reader.size.width, height: reader.size.height)
                         
                     HStack {
-                        ForEach(savedAvatars, id: \.self) { avatar in
+                        ForEach(avatars) { avatar in
                             VStack {
-                                Image(avatar.head.rawValue)
+                                Image(avatar.headValue ?? "")
                                     .resizable()
                                     .scaleEffect(1.5)
                                     .aspectRatio(contentMode: .fit)
-                                Image(avatar.body.rawValue)
+                                Image(avatar.bodyValue ?? "")
                                     .resizable()
                                     .scaleEffect(1.6)
                                     .aspectRatio(contentMode: .fit)
-                                Image(avatar.bottom.rawValue)
+                                Image(avatar.bottomValue ?? "")
                                     .resizable()
                                     .scaleEffect(1.7)
                                     .aspectRatio(contentMode: .fit)

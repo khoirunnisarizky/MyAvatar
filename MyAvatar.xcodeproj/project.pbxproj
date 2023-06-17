@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0EED852A3DA2C100942F42 /* AvatarData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EED832A3DA2C100942F42 /* AvatarData.xcdatamodeld */; };
+		4E0EED872A3DA4F100942F42 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EED862A3DA4F100942F42 /* DataController.swift */; };
 		4EB5E21B29C75FF80021657B /* MyAvatarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB5E21A29C75FF80021657B /* MyAvatarApp.swift */; };
 		4EB5E21D29C75FF80021657B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB5E21C29C75FF80021657B /* ContentView.swift */; };
 		4EB5E21F29C75FF90021657B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB5E21E29C75FF90021657B /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E0EED842A3DA2C100942F42 /* AvatarData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AvatarData.xcdatamodel; sourceTree = "<group>"; };
+		4E0EED862A3DA4F100942F42 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		4E46C1212A3B3B370054AAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4EB5E21729C75FF80021657B /* MyAvatar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAvatar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB5E21A29C75FF80021657B /* MyAvatarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAvatarApp.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 				4EB5E21E29C75FF90021657B /* Assets.xcassets */,
 				4EB5E22329C75FF90021657B /* MyAvatar.entitlements */,
 				4EB5E22029C75FF90021657B /* Preview Content */,
+				4E0EED832A3DA2C100942F42 /* AvatarData.xcdatamodeld */,
+				4E0EED862A3DA4F100942F42 /* DataController.swift */,
 			);
 			path = MyAvatar;
 			sourceTree = "<group>";
@@ -144,6 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E0EED872A3DA4F100942F42 /* DataController.swift in Sources */,
+				4E0EED852A3DA2C100942F42 /* AvatarData.xcdatamodeld in Sources */,
 				4EB5E22A29C766460021657B /* Avatar.swift in Sources */,
 				4EB5E21D29C75FF80021657B /* ContentView.swift in Sources */,
 				4EB5E21B29C75FF80021657B /* MyAvatarApp.swift in Sources */,
@@ -350,6 +358,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4E0EED832A3DA2C100942F42 /* AvatarData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4E0EED842A3DA2C100942F42 /* AvatarData.xcdatamodel */,
+			);
+			currentVersion = 4E0EED842A3DA2C100942F42 /* AvatarData.xcdatamodel */;
+			path = AvatarData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4EB5E20F29C75FF70021657B /* Project object */;
 }
